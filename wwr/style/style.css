@@ -1,5 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@500&family=Poppins:wght@400;700;800&family=Shantell+Sans:wght@300;400&display=swap');
+
+
 body{
     background-color:#4ce0b3;
+    font-family: "Poppins","Messiri", "Shantell+Sans";
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+#logo{
+    padding-top: 5px;
 }
 
 .logo_img{
@@ -8,6 +19,7 @@ body{
 
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
   
 
@@ -20,6 +32,7 @@ nav a{
     text-align: center;
     background-color: white;
     color: #b47eb3;
+    padding: 5px;
     
 }
     
@@ -35,7 +48,15 @@ nav a:hover {
 .home-title{
     background-color: white;
     color: #2459a8;
+    font-family: "Poppins","Messiri", "Shantell+Sans";
+    font-size: 2em;
+    margin-top: 10px;
 }
+
+h2{
+    margin: 0;
+}
+
 h4{
     background-color: white;
     color: #2459a8;
@@ -43,7 +64,7 @@ h4{
 
 
 #content{
-    width: max-content 1600px;
+    width: max-content;
     margin: 0 auto;
 
 }
@@ -62,6 +83,10 @@ main section{
     text-align: center;
 }
 
+main section img{
+    box-sizing: border-box;
+}
+
 #background{
     background: 725px;
     background-color: #2459a8;
@@ -69,20 +94,41 @@ main section{
 
 .msg{
     background-color: #b47eb3;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 .msg h2{
     background-color: white;
     color: black;
+    font-family: "Poppins","Messiri", "Shantell+Sans";
 }
 
 .msg p{
     background-color: white;
     color: black;
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+
+.book, .join {
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+.rivers-card, .camping-card, .rappids-car{
+    margin: 200px 0;
+}
+
+.card-img{
+    border: 10px solid #b47eb3;
 }
 
 footer{
     background-color: #4ce0b3;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer a {
@@ -95,6 +141,10 @@ footer p {
     font-size: 1.2em;
 }
 
+footer .social img{
+    padding-top: 15px;
+}
+
 #contact :hover {
     background-color: #b47eb3;
 }
@@ -102,3 +152,4 @@ footer p {
 #site :hover {
     background-color: #b47eb3;
 }
+
