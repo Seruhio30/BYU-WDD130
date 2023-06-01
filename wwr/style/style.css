@@ -79,11 +79,11 @@ h4{
     text-align: center;
 }
 
-main section{
+.home-grid{
     text-align: center;
 }
 
-main section img{
+.home-grid img{
     box-sizing: border-box;
 }
 
