@@ -1,0 +1,39 @@
+body{
+    background-color: blueviolet;
+}
+
+.grid-layout{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: gray;
+
+}
+
+p, .one{
+    text-align: center;
+    font-size: 85px;
+    font-weight: bold;
+    
+}
+
+.two{
+    text-align: center;
+    font-size: 85px;
+    font-weight: bold;
+    color: brown;
+}
+.box{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    text-align: center;
+    
+
+}
+
+.box1{
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    text-align: center;
+}
