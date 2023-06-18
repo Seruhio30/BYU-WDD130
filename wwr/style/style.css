@@ -5,8 +5,14 @@ body{
     background-color:#4ce0b3;
     font-family: "Poppins","Messiri", "Shantell+Sans";
     font-size: 22px;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    padding: 0 auto;  
+}
+
+#content{
+    
+   width: 0 auto;
+   margin: 0 auto;
 }
 
 #logo{
@@ -70,11 +76,7 @@ h4{
 }
 
 
-#content{
-    width: max-content;
-    margin: 0 auto;
 
-}
 
 
 
@@ -166,6 +168,7 @@ main section img{
 .rivers-card, .camping-card, .rapids-card{
     width: 100%;
     margin: 200px 0;
+    
 }
 
 
@@ -190,6 +193,7 @@ main section img{
     border: 10px solid #d9c2a3;
     transition: transform .5s;
     box-shadow: 5px 5px 10px #6f7364;
+   
 }
 .card-img:hover {
     opacity: .6;
@@ -246,6 +250,85 @@ footer .social img{
 #site :hover {
     background-color: #b47eb3;
 }
+
+
+.page2{
+    background-color: #b47eb3;
+}
+
+.content1{
+    background-color: #3f8ec2;
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    margin: 20px 10px;
+  
+}
+
+.river-title{
+    font-weight: bolder;
+    color: #4ce0b3;
+    font-size: 50px;
+}
+
+.river-name{
+    text-align: center;
+    font-weight: bold;
+    color: #08316d;
+}
+
+.content-img, .img-content { 
+    
+    width: 200px; 
+    height: 200px; 
+    float: left; 
+    margin-left: 5px;
+    padding-right: 5px;
+   
+    
+} 
+
+.img-content{
+   
+    transition: transform .5s;
+}
+.img-content:hover{
+   
+        opacity: .6;
+        transform: scale(1.6);
+        align-items: center;
+}
+
+
+
+.level{
+    font-style: oblique;
+    font-weight: bold;
+}
+
+p{
+    font-family: "Poppins";
+    
+}
+
+#pag2{
+    font-family: "Messiri";
+}
+   
+
+  
+
+
+
+
+   
+  
+
+
+
+
+
+
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
