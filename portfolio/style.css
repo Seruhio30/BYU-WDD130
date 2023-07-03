@@ -1,9 +1,346 @@
-.foto{
+
+*{
+    margin: 0;
+    padding: 0;
+  }
+  .pnp{
+    width: 30px;
+    height: 30px;
+  }
+  body{
+    background-color:#2f4858;
+  }
+  
+  .container{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(5, auto);
+    gap: 10px;
+    }
+  
+  .container > div, .container .header, .container .main-one,
+  .container .main-two, .container .main-three, .container .main-our, .container .footer{
+    background-color: #2f4858;
+    padding: 20px;
+    border: 4px solid black
+    }
+  
+  .header{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    }
+  
+    .img-header {
+    width: 150px;
+    border: 4px solid gray;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  
+  .img-header img {
+    width: 100%;
+    border-radius: 50%;
+    
+  }
+  
+  .name-header{
+    width: 250px;
+    height: 80px;
+    border: 2px solid black;
+    margin: 0 auto ;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .name{
+    margin: 0 auto;
+  }
+  
+  
+  
+  .logo-menu {
+     
+    border: 2px solid black;
+    margin-top: 20px;
+  }
+  
+  .logo{
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  
+  .logo img{
+    width: 150px;
+    margin-left: 60px;
+    border: 2px solid black;
+  }
+  
+  
+  .menu{
+    border: 2px solid black;
+  }
+  
+  .menu a{
+    display: block;
+    text-align:center ;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #f26419;
+    padding: 10px;
+  }
+  
+  .social {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .social a {
+    margin: 0 5px;
+  }
+  
+  
+  /*intro*/
+  .main-one{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-image: url(img/homePage-Img/rsz_pexels-gagareen-code.jpg);
+  }
+  
+  #welcome, #hire, #page-name {
     width: 200px;
-    height: 200px;
+    margin:  0 auto;
+    margin-top: 90px;
+    
+  }
+  
+    .welcome, .page-name, .hireme{
+    font-size: 45px;
+    font-weight: bold;
+    color: #f26419;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  #address{
+    width: 250px;
+    margin:  0 auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  .country{
+    font-size: 25px;
+    font-weight: bold;
+    color: #f26419;
+    text-align: center;
+  }
+    
+  
+  
+   /*about me*/
+  .main-two{
+    grid-column: 1/3;
+    grid-row: 2/3;
+  
+  }
+  
+  .about-me{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5px;
+    font-size: 25px;
+    color: #f26419;
+  }
+  
+    
+/*tecnologies*/
+.main-three{
+    grid-column: 1/3;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: repeat(7,auto);
+    grid-template-areas: auto auto;
+    justify-items: center;
+      
+
+}
+#tecno{
+    grid-column: 1/8;
+    grid-row: 1/2;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5px;
+    font-size: 25px;
+    color: #f26419;
 }
 
-.pnp{
-    width: 40px;
-    height: 40px;
+.lenguage{
+   
+    grid-row: 2/3;
+    margin-top: 30px;
+    
+    
 }
+  
+  
+  
+  /*contac me*/
+  .main-four{
+      grid-column: 1/3;
+      grid-row: 4/5;
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: repeat(5,auto);
+    }
+
+    #contact{
+        grid-column: 1/3;
+        grid-row: 1/2;
+        
+    }
+
+    .cm{
+        grid-column: 1/8;
+        grid-row: 1/2;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 5px;
+        font-size: 25px;
+        color: #f26419;
+    }
+
+    .hire{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .hireMe{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        background-color: #86bbd8;
+        border: 1px solid black;
+        width: 100px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 20px;
+        font-size: 25px;
+        color: #f26419;
+    }
+
+    .contact-line{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        background-color: #86bbd8;
+        border: 1px solid black;
+        width: 200px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 20px;
+        font-size: 25px;
+        color: #f26419;  
+    }
+
+    .mail{ 
+        grid-column: 1/2;
+        grid-row: 4/5;
+        background-color: #86bbd8;
+        border: 1px solid black;
+        width: 300px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 20px;
+        font-size: 25px;
+        color: #f26419;
+    }
+
+    .ld{
+        grid-column: 1/3;
+        grid-row: 5/6;
+        background-color: #86bbd8;
+        border: 1px solid black;
+        width: 400px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 20px;
+        font-size: 25px;
+        color: #f26419;
+        
+    }
+   
+    .linkedin{
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 20px;
+        font-size: 25px;
+        color: #f26419;
+        text-decoration: none;
+    }
+
+  
+ 
+
+    /* css for the form area*/
+
+form {
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #86bbd8;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+form li + li {
+    margin-top: 1em;
+    
+}
+  
+form label {
+    /* Tamaño y alineación uniforme */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+
+  /* footer */
+.footer{
+    grid-column: 1/3;
+    grid-row: 5/6;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+  }
+
+  .copy{
+    grid-column: 1/2;
+    font-size: 18px;
+    color: #f26419;
+   
+  }
+  .up{
+    grid-column: 2/3;
+    font-size: 18px;
+    color: #f26419;
+  }
+
+  .site{
+    grid-column: 3/4;
+    font-size: 18px;
+    color: #f26419;
+  }
+
+  .footer a{
+    font-size: 18px;
+    color: #f26419;
+    text-decoration: none;
+  }
