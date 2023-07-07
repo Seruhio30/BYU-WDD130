@@ -109,54 +109,75 @@
                 <div class="n-m">
                     <h1 class="name-titular">Gallery</h1>
                 </div>
-                <div class="gallery1">
-                    
-                    <img src="img/projectPage-Img/rsz_welder-673559_1280.jpg" alt="">
-                
-                </div>
 
-                <div class="gallery2">
-                
-                    <img src="img/projectPage-Img/rsz_rsz_pexels-it-services-eu-hardware.jpg" alt="">
-                    
-                </div>
+                                <!-- Container for the image gallery -->
+                <div class="content">
 
-                <div class="gallery3">
+                    <!-- Full-width images with number text -->
+                    <div class="mySlides">
+                    <div class="numbertext">1 / 6</div>
+                        <img src="img/projectPage-Img/rsz_welder-673559_1280.jpg" style="width:100%">
+                    </div>
                 
-                    <img src="img/projectPage-Img/portadacrc.jpg" alt="">
+                    <div class="mySlides">
+                    <div class="numbertext">2 / 6</div>
+                        <img src="img/projectPage-Img/rsz_rsz_pexels-it-services-eu-hardware.jpg" style="width:100%">
+                    </div>
                 
+                    <div class="mySlides">
+                    <div class="numbertext">3 / 6</div>
+                        <img src="img/projectPage-Img/portadacrc.jpg" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides">
+                    <div class="numbertext">4 / 6</div>
+                        <img src="img/homePage-Img/SeruhioCodeLogo.png" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides">
+                    <div class="numbertext">5 / 6</div>
+                        <img src="img/studyPage-Img/rsz_rsz_pexels-emily-ranquist-1205651 (1).jpg" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides">
+                    <div class="numbertext">6 / 6</div>
+                        <img src="img/homePage-Img/rsz_rsz_sergio_formal.jpg" style="width:100%">
+                    </div>
+                
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                    <!-- Image text -->
+                    <div class="caption-container">
+                    <p id="caption"></p>
+                    </div>
+                
+                    <!-- Thumbnail images -->
+                    <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="img/projectPage-Img/rsz_welder-673559_1280.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img/projectPage-Img/rsz_rsz_pexels-it-services-eu-hardware.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img/projectPage-Img/portadacrc.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img/homePage-Img/SeruhioCodeLogo.png" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img/studyPage-Img/rsz_rsz_pexels-emily-ranquist-1205651 (1).jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img/homePage-Img/rsz_rsz_sergio_formal.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+                    </div>
+                    </div>
                 </div>
-
-                <div class="gallery4">
-                
-                    <img src="img/homePage-Img/SeruhioCodeLogo.png" alt="SeruhioCodeLogo">
-                
-                </div>
-
-                <div class="gallery5">
-                    
-                    <img src="img/studyPage-Img/rrsz_rsz_low-angle-stacked-books-graduation-cap-ladders-education-day.jpg" alt="">
-                </div>
-
-                <div class="gallery6">
-                    
-                    <img src="img/homePage-Img/rsz_rsz_sergio_formal.jpg" alt="">
-                
-                </div>
-
-                <div class="gallery7">
-                    
-                    <img src="img/homePage-Img/rsz_rsz_pexels-gagareen-code.jpg" alt="">
-                
-                </div>
-
-                <div class="gallery8">
-                    
-                    <img src="img/projectPage-Img/logodeliFood.jpeg" alt="">
-                
-                </div>
-
             </section>
+                    
+                  
         </main>
 
 
@@ -182,4 +203,36 @@
         </footer>
     </div>
 </body>
+<script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
 </html>
