@@ -769,6 +769,12 @@ form label {
     grid-template-rows: repeat(3, auto);
     gap: 10px;
   }
+
+  #main-1 img{
+   
+    width: 250px;
+    height: 300px;
+  }
  
   .nt{
     grid-column: 1/3;
@@ -781,16 +787,17 @@ form label {
     grid-column: 1/2;
     grid-row: 2/3;
     border: 2px solid black;
+    margin: 0 auto;
     margin-top: 10px
 
   }
 
+
   .sar{
     grid-column: 2/3;
     grid-row: 2/3;
-    width: 240px;
-    height: 240px;
     border: 2px solid black;
+    margin: 0 auto;
     margin-top: 10px
 
   }
@@ -798,8 +805,8 @@ form label {
   .encriptador{
     grid-column: 1/2;
     grid-row: 3/4;
-   
     border: 2px solid black;
+    margin: 0 auto;
     margin-top: 10px
 
   }
@@ -807,8 +814,8 @@ form label {
   .rafting{
     grid-column: 2/3;
     grid-row: 3/4;
-   
     border: 2px solid black;
+    margin: 0 auto;
     margin-top: 10px
 
   }
